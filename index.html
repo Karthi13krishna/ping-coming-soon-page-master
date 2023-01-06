@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -12,32 +18,71 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/89f0726039.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
     <title>Frontend Mentor | Ping coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+  <body class="p-4 grid gap-2 place-items-center">
+    <header class="flex justify-center mt-6">
+      <img src="/images/logo.svg" alt="ping logo" />
+    </header>
+    <main class="mt-6 w-full flex flex-col items-center text-center">
+      <h class="text-4xl text-gray-500">
+        We are launching
+        <span class="font-bold text-gray-900">soon!</span>
+      </h>
+      <p class="mt-2">Subscribe and get notified</p>
+      <form class="mt-5 w-full max-w-lg flex gap-4" action="#">
+        <input
+          class="flex-1 text-sm border-gray-300 border-solid border-2 rounded-full px-6 py-3"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Your email address..."
+        />
+        <button
+          class="bg-blue-500 px-8 py-3 rounded-full font-semibold text-white text-sm"
+        >
+          Notify Me
+        </button>
+      </form>
+    </main>
+    <section class="mt-8">
+      <img
+        class="w-full max-w-lg"
+        src="./images/illustration-dashboard.png"
+        alt=""
+      />
+    </section>
+    <footer class="mt-8">
+      <div class="flex justify-center gap-4">
+        <i
+          class="fa-brands fa-facebook text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full aspect-square"
+        ></i>
+        <i
+          class="fa-brands fa-twitter text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full"
+        ></i>
+        <i
+          class="fa-brands fa-instagram text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full"
+        ></i>
+      </div>
+      <p class="mt-6 text-center font-light text-gray-400">
+        &copy;Copyright Ping. All rights reserved.
+      </p>
+    </footer>
 
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
