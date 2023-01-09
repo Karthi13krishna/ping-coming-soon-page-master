@@ -27,26 +27,35 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
-  <body class="p-4 grid gap-2 place-items-center">
-    <header class="flex justify-center mt-6">
-      <img src="/images/logo.svg" alt="ping logo" />
+  <body class="p-10 grid gap-2 place-items-center sm:p-4">
+    <header class="mx-auto mt-6">
+      <img class="w-4/5 sm:w-auto" src="/images/logo.svg" alt="ping logo" />
     </header>
-    <main class="mt-6 w-full flex flex-col items-center text-center">
-      <h class="text-4xl text-gray-500">
+    <main class="mt-6 w-full items-center text-center mx-auto">
+      <h1 class="text-3xl text-gray-500 sm:text-4xl">
         We are launching
         <span class="font-bold text-gray-900">soon!</span>
-      </h>
+      </h1>
       <p class="mt-2">Subscribe and get notified</p>
-      <form class="mt-5 w-full max-w-lg flex gap-4" action="#">
-        <input
-          class="flex-1 text-sm border-gray-300 border-solid border-2 rounded-full px-6 py-3"
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Your email address..."
-        />
+      <form
+        class="mt-5 mx-auto w-full max-w-lg sm:flex sm:gap-4 sm:justify-around"
+        action="/"
+      >
+        <div class="w-4/5 mx-auto sm:flex-1 sm:w-auto">
+          <input
+            class="w-full text-sm border-gray-300 border-solid border-2 rounded-full px-6 py-3"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your email address..."
+          />
+          <p id="error-msg" class="text-sm text-red-500 italic mt-2 hidden">
+            Please provide a valid email address
+          </p>
+        </div>
         <button
-          class="bg-blue-500 px-8 py-3 rounded-full font-semibold text-white text-sm"
+          id="submit"
+          class="bg-blue-500 px-8 py-3 rounded-full font-semibold text-white text-sm block mx-auto mt-4 w-4/5 max-w-lg sm:mt-0 sm:w-auto sm:h-fit hover:bg-blue-400"
         >
           Notify Me
         </button>
@@ -59,17 +68,23 @@
         alt=""
       />
     </section>
-    <footer class="mt-8">
+    <footer class="mt-8 mx-auto">
       <div class="flex justify-center gap-4">
-        <i
-          class="fa-brands fa-facebook text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full aspect-square"
-        ></i>
-        <i
-          class="fa-brands fa-twitter text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full"
-        ></i>
-        <i
-          class="fa-brands fa-instagram text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full"
-        ></i>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i
+            class="fa-brands fa-facebook text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full aspect-square hover:bg-blue-400 hover:text-white cursor-pointer"
+          ></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <i
+            class="fa-brands fa-twitter text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full hover:bg-blue-400 hover:text-white cursor-pointer"
+          ></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i
+            class="fa-brands fa-instagram text-blue-500 p-2 border-solid border-gray-200 border-2 rounded-full hover:bg-blue-400 hover:text-white cursor-pointer"
+          ></i>
+        </a>
       </div>
       <p class="mt-6 text-center font-light text-gray-400">
         &copy;Copyright Ping. All rights reserved.
