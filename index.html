@@ -38,6 +38,8 @@
       </h1>
       <p class="mt-2">Subscribe and get notified</p>
       <form
+        name="email"
+        id="email-form"
         class="mt-5 mx-auto w-full max-w-lg sm:flex sm:gap-4 sm:justify-around"
         action="/"
       >
@@ -46,15 +48,13 @@
             class="w-full text-sm border-gray-300 border-solid border-2 rounded-full px-6 py-3"
             type="text"
             name="email"
-            id="email"
+            id="email-input"
             placeholder="Your email address..."
           />
-          <p id="error-msg" class="text-sm text-red-500 italic mt-2 hidden">
-            Please provide a valid email address
-          </p>
+          <p id="error-msg" class="text-sm text-red-500 italic mt-2 hidden"></p>
         </div>
         <button
-          id="submit"
+          id="email-submit"
           class="bg-blue-500 px-8 py-3 rounded-full font-semibold text-white text-sm block mx-auto mt-4 w-4/5 max-w-lg sm:mt-0 sm:w-auto sm:h-fit hover:bg-blue-400"
         >
           Notify Me
