@@ -4,8 +4,8 @@
   "description": "![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "parcel": "^2.0.0-nightly.1236",
+    "parcel-bundler": "^1.12.5",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.4"
